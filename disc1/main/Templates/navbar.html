@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Menu De Navegacion</title>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+	</head>
+	<body class="bd">
+		<ul class="menu">
+			<li><a href="{% url 'main:home' %}">Inicio</a></li>
+			<li><a href="{% url 'main:detalle' %}">Detalles</a></li>
+			<li><a href="{% url 'main:funcion' %}">Como Funciona</a></li>
+		</ul>
+	</body>
+</html>
