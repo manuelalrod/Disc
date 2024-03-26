@@ -3,7 +3,100 @@
 
 {% block content %}
 <body>
-    
+    <!--Primera Seccion-->
+    <section class="services container">
+        <div class="service">
+            <img src="{% static 'images/sis.svg' %}" alt="Sistema solar">
+            <h3>Sistema solar</h3>
+            <p>
+                Es un sistema planetario que une por gravedad a un conjunto de objetos astronómicos.
+            </p>
+        </div>
+
+        <div class="service">
+            <img src="{% static 'images/mt.svg' %}" alt="Telescopio">
+            <h3>Telescopio</h3>
+            <p>
+                Se utiliza para observar objetos lejanos en el espacio, como estrellas, planetas y galaxias.
+            </p>
+        </div>
+
+        <div class="service">
+            <img src="{% static 'images/sst.svg' %}" alt="Nave espacial">
+            <h3>Nave espacial</h3>
+            <p>
+                Es una máquina diseñada para su envío al espacio. Se pueden utilizar para observar la Tierra. 
+            </p>
+        </div>
+
+        <div class="service">
+            <img src="{% static 'images/st.svg' %}" alt="Satelite">
+            <h3>Satelite</h3>
+            <p>
+                Son utilizados para enviar y recibir comunicaciones como telefonía, televisión o Internet
+            </p>
+        </div>
+</section>
+
+<!--Segunda Seccion-->
+<section class="portafolios container">
+
+    <div class="porfolio" >
+        
+        <img src="{% static 'images/rk.png' %}" alt="Cohete rojo">
+        <div class="porfolio-1">
+
+            <h3>Cohetes</h3>
+            <p>
+                Los cohetes espaciales son vehículos diseñados para transportar carga útil 
+                desde la superficie terrestre al espacio exterior. La carga útil puede ser 
+                vehículos exploradores, satélites, suministros, astronautas y más.
+            </p>
+            <a href="#" class="btn-2">Más información</a>
+        </div>
+    </div>
+
+    <div class="porfolio" >
+        
+        <div class="porfolio-2">
+
+            <h3>Cascos</h3>
+            <p>
+                El casco de los astronautas también se conoce como escafandra o traje espacial. 
+                El casco y el visor protegen la cabeza del astronauta y le permiten ver tanto como sea posible. 
+
+            </p>
+            <a href="#" class="btn-2">Más información</a>
+        </div>
+        <img src="{% static 'images/ca.png' %}" alt="Cohete rojo">
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="container">
+        <div class="info">
+            <div class="info-content">
+
+                <div class="info-price">
+                    <h2>Sabes cuales son los planetas?</h2>
+                    <p class="price">Lista de planetas</p>
+                    <p>
+                        Los ocho planetas del sistema solar son:
+                        Mercurio, Venus, La Tierra, Marte, Júpiter, Saturno, Urano, Neptuno. 
+                    </p>
+                </div>
+                <div class="info-txt">
+                    <h2>Gracias por visitarnos</h2>
+                    <p>
+                        Vuelve cuando sientas curiosidad por el espacio.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
     
 </body>
 </html>

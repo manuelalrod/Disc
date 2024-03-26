@@ -1,15 +1,49 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<title>Menu De Navegacion</title>
-		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<link rel="stylesheet" href="{% static 'css/estilo.css' %}">
 	</head>
-	<body class="bd">
-		<ul class="menu">
-			<li><a href="{% url 'main:home' %}">Inicio</a></li>
-			<li><a href="{% url 'main:detalle' %}">Detalles</a></li>
-			<li><a href="{% url 'main:funcion' %}">Como Funciona</a></li>
-		</ul>
+	<body>
+
+		<header>
+			<div class="menu container">
+
+				<a href="#" class="logo">SpaceX</a>
+				<input type="checkbox" id="menu">
+				<label for="menu">
+					<img src="{% static 'images/menu.png' %}" class="menu-icono" alt="menu">
+				</label>
+	
+				<nav class="navbar">
+					<ul>
+						<li><a href="#">Inicio</a></li>
+						<li><a href="#">Planetas</a></li>
+						<li><a href="#">Astronautas</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="header-content container">
+
+				<div class="content">
+	
+					<h1>El espacio es para todo el mundo</h1>
+					<p>
+						Descubre el universo con nosotros
+					</p>
+					<a href="#" class="btn-1">Más información</a>
+				</div>
+				<img src="{% static 'images/as.png' %}" alt="diversos planetas">
+			</div>
+
+			<section class="stars">
+				<img src="{% static 'images/stars.png' %}">
+			</section>
+			
+		</header>
+		{% block content %}{% endblock %}
 	</body>
 </html>
